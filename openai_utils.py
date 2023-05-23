@@ -12,6 +12,3 @@ def get_completion(prompt, model="gpt-3.5-turbo", temperature=1):
     )
     return response.choices[0].message["content"]
 
-if __name__ == '__main__':
-    print(get_completion('请问我应该为猫咪生产做些什么'))
-
